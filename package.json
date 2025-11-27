@@ -1,1 +1,24 @@
-{"name":"base-tvl-frame","version":"1.0.0","description":"Mini-app for Farcaster (C-Max PRO) showing Base projects TVL","main":"server.js","scripts":{"start":"node server.js","dev":"nodemon server.js"},"author":"Mirlan1","license":"MIT","dependencies":{"express":"^4.18.2","ejs":"^3.1.9","node-fetch":"^2.6.7","cors":"^2.8.5","body-parser":"^1.20.2","moment":"^2.29.4"},"engines":{"node":"24.x"}}
+{
+  "name": "base-tvl-frame",
+  "version": "1.0.0",
+  "description": "Mini-app for Farcaster (C-Max PRO) showing Base projects TVL",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Mirlan1",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ejs": "^3.1.9",
+    "node-fetch": "^2.6.7",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "moment": "^2.29.4",
+    "serverless-http": "^3.0.0"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}
