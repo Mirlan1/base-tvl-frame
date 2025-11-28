@@ -21,13 +21,3 @@ app.get('/og', async (req, res) => {
       <text x="100" y="460" font-family="Arial, sans-serif" font-size="200" fill="white" font-weight="bold">$${tvl}B</text>
       <text x="100" y="560" font-family="Arial, sans-serif" font-size="60" fill="#aaa">Live data from Llama.fi</text>
     </svg>`;
-
-    res.set('Content-Type', 'image/svg+xml');
-    res.set('Cache-Control', 's-maxage=60, stale-while-revalidate=300');
-    res.send(svg);
-  } catch (e) { res.status(500).send('Error'); }
-});
-
-app.post('/refresh', (req, res) => res.redirect('/'));
-
-module.exports = app;
